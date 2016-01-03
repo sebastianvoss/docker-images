@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y \
 RUN printf '\n%s\n%s\n%s\n' \
     '$ModLoad imudp' \
     '$UDPServerRun 514' \
-    '$UDPServerAddress 127.0.0.1' 
+    '$UDPServerAddress 127.0.0.1' \ 
  >> /etc/rsyslog.conf
 
 # copy haproxy start script
